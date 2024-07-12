@@ -1,5 +1,5 @@
 import React from 'react'
-import { TextGenerateEffect } from './ui/text-generate-effect'
+import { TextGenerateEffect } from './ui/TextGenerateEffect'
 import { AuroraBackground } from './ui/AuroraBackground'
 import ShimmerButton from './ui/ShimmerButton'
 import { FaLocationArrow } from 'react-icons/fa6'

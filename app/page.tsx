@@ -1,14 +1,14 @@
 "use client"
 
 import { FaHome } from "react-icons/fa";
-import Introduction from "./components/Introduction";
-import ThemeSwitch from "./components/ThemeSwitch";
-import { FloatingNav } from "./components/ui/FloatingNavbar";
-import About from "./components/About";
+import Introduction from "../components/Introduction";
+import ThemeSwitch from "../components/ThemeSwitch";
+import { FloatingNav } from "../components/ui/FloatingNavbar";
+import About from "../components/About";
 
 export default function Home() {
   return (
-    <>
+    <main>
       <FloatingNav navItems={[
               {name: 'Home', link: '/', icon: <FaHome />},
               {name: 'About', link: '#about'},
@@ -19,7 +19,9 @@ export default function Home() {
         />
       <ThemeSwitch />
       <Introduction />
-      <About />
-    </>
+      <div className="max-w-8xl w-full">
+        <About />
+      </div>
+    </main>
   );
 }
