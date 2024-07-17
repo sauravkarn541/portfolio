@@ -12,7 +12,7 @@ const ThemeSwitch = () => {
     setMounted(true);
   }, [])
 
-  return <button className="rounded-full p-5 absolute bottom-0 right-0 cursor-pointer z-10"
+  return <button className="rounded-full p-5 fixed bottom-0 right-0 cursor-pointer z-10"
         onClick={() => {
           setTheme(resolvedTheme === 'light' ? 'dark' : 'light')
         }}
