@@ -19,7 +19,7 @@ const Introduction = () => {
                 Hi, I&apos;m Saurav, a Full Stack Developer based in Nepal.
               </p>
               <a href="#">
-                <ShimmerButton title="Show my work"  icon={<FaLocationArrow />} position="right"/>
+                <ShimmerButton title="Contact Me"  icon={<FaLocationArrow />} position="right"/>
               </a>
             </div>
           </div>
