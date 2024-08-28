@@ -3,6 +3,9 @@ import { TextGenerateEffect } from './ui/TextGenerateEffect'
 import { AuroraBackground } from './ui/AuroraBackground'
 import ShimmerButton from './ui/ShimmerButton'
 import { FaLocationArrow } from 'react-icons/fa6'
+import { Canvas } from '@react-three/fiber'
+import { OrbitControls } from '@react-three/drei'
+import { Avatar } from './3d/Avatar'
 
 const Introduction = () => {
   return (
@@ -23,6 +26,16 @@ const Introduction = () => {
               </a>
             </div>
           </div>
+        </div>
+        <div className='absolute bottom-0 right-0' style={{ height: "300px" }}>
+          <Canvas shadows camera={{ position: [3, 3, 3], fov: 30 }}>
+            {/* <color attach="background" args={["#ececec"]} /> */}
+            <OrbitControls />
+            <group position-y={-1}>
+              <Avatar />
+            </group>
+            <ambientLight intensity={1} />
+          </Canvas>
         </div>
       </div>
     </AuroraBackground>

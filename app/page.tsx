@@ -40,7 +40,7 @@ export default function Home() {
           <Introduction />
         </Section>
         <Section id="about" className="bg-red-500" type="about">
-          About is here
+          About section is here
         </Section>
         <Section id="projects" className="bg-blue-500" type="projects">
           Projects is here
