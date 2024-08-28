@@ -1,9 +1,10 @@
 "use client"
 
-import { FaHome } from "react-icons/fa";
+import { FaHome, FaRProject, FaInfo } from "react-icons/fa";
 import Introduction from "../components/Introduction";
 import ThemeSwitch from "../components/ThemeSwitch";
 import { FloatingNav } from "../components/ui/FloatingNavbar";
+import { FaMessage } from "react-icons/fa6";
 
 type SectionProps = {
   id: string;
@@ -26,30 +27,18 @@ export default function Home() {
     <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-clip mx-auto">
       <ThemeSwitch />
       <div className="w-full">
-         <FloatingNav
+        <FloatingNav
           navItems={[
             {name: 'Home', link: '/', icon: <FaHome />},
-            {name: 'About', link: '#about'},
-            {name: 'Projects', link: '#projects'},
-            {name: 'Contact', link: '#contact'},
+            {name: 'About', link: '#about', icon: <FaInfo />},
+            {name: 'Projects', link: '#projects', icon: <FaRProject />},
+            {name: 'Contact', link: '#contact', icon: <FaMessage />},
           ]}
           className="px-5 py-5 rounded-2xl"
         />
-        <section id="home">
+        <Section id="home" className="" type="introduction">
           <Introduction />
-        </section>
-        
-        {/* <section id="about">
-          <Introduction />
-        </section>
-
-        <section id="projects">
-          <Introduction />
-        </section>
-
-        <section id="contact">
-          <Introduction />
-        </section> */}
+        </Section>
         <Section id="about" className="bg-red-500" type="about">
           About is here
         </Section>
