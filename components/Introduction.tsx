@@ -1,11 +1,11 @@
 import React from 'react'
 import { TextGenerateEffect } from './ui/TextGenerateEffect'
 import { AuroraBackground } from './ui/AuroraBackground'
-import ShimmerButton from './ui/ShimmerButton'
 import { FaLocationArrow } from 'react-icons/fa6'
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls } from '@react-three/drei'
 import { Avatar } from './3d/Avatar'
+import ShimmerButton from "@/components/ui/ShimmerButton";
 
 const Introduction = () => {
   return (
@@ -27,6 +27,7 @@ const Introduction = () => {
             </div>
           </div>
         </div>
+
         <div className='absolute bottom-0 right-0' style={{ height: "300px" }}>
           <Canvas shadows camera={{ position: [3, 3, 3], fov: 30 }}>
             {/* <color attach="background" args={["#ececec"]} /> */}
